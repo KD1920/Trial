@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+        <link rel="stylesheet" href="js/trial.js">
     </head>
     <body>
         <div id="header" class="row">
@@ -18,18 +20,17 @@
                     bg-light">
                     <div class="container-fluid d-flex navigationBar">
                         <a class="navbar-brand" href="#"><img
-                                src="images/logo.png"
-                                alt=""></a>
-                        <button class="navbar-toggler" type="button"
+                                src="images/logo.png" alt=""></a>
+                        <button class="navbar-toggler collapsed" type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarColor03"
-                            aria-controls="navbarColor03"
-                            aria-expanded="false" aria-label="Toggle
+                            aria-controls="navbarColor03" aria-expanded="false"
+                            aria-label="Toggle
                             navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse "
-                            id="navbarColor03">
+                        <div class="navbar-collapse collapse" id="navbarColor03"
+                            \>
                             <ul class="navbar-nav me-auto ">
                                 <li class="nav-item ps-5 dropdown">
                                     <a class="nav-link dropdown-toggle"
@@ -76,13 +77,12 @@
                             <div class="dropdown">
                                 <div id="dropdown">
                                     <a id="user-name" class="nav-link
-                                        dropdown-toggle "
+                                        dropdown-toggle"
                                         data-bs-toggle="dropdown" href="#"
                                         role="button" aria-haspopup="true"
                                         aria-expanded="false">
                                         <img class="userProfile"
-                                            src="images/user-img.png"
-                                            alt="">
+                                            src="images/user-img.png" alt="">
                                         Evan Donohue
                                     </a>
                                     <div class="dropdown-menu">
@@ -107,10 +107,9 @@
                                 <img id="search" src="images/search.png"
                                     alt="search-addon">
                                 <input type="search" class="form-control
-                                    rounded"
-                                    placeholder="Search mission..."
+                                    rounded" placeholder="Search mission..."
                                     aria-label="Search"
-                                    aria-describedby="search-addon" />
+                                    aria-describedby="search-addon">
                             </div>
                         </div>
                         <div class="col-6">
@@ -118,8 +117,8 @@
                                 <div class="col-3 pt-2 dropdown border-end
                                     border-1">
                                     <button class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown"
-                                        role="button" aria-haspopup="true"
+                                        data-bs-toggle="dropdown" role="button"
+                                        aria-haspopup="true"
                                         aria-expanded="false">Country</button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item">Country
@@ -132,8 +131,8 @@
                                 </div>
                                 <div class="col-3 pt-2 border-end border-1"><button
                                         class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown"
-                                        role="button" aria-haspopup="true"
+                                        data-bs-toggle="dropdown" role="button"
+                                        aria-haspopup="true"
                                         aria-expanded="false">City</button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item">City
@@ -145,8 +144,8 @@
                                     </div></div>
                                 <div class="col-3 pt-2 border-end border-1"><button
                                         class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown"
-                                        role="button" aria-haspopup="true"
+                                        data-bs-toggle="dropdown" role="button"
+                                        aria-haspopup="true"
                                         aria-expanded="false">Theme</button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item">Theme
@@ -158,8 +157,8 @@
                                     </div></div>
                                 <div class="col-3 pt-2 border-end border-1"><button
                                         class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown"
-                                        role="button" aria-haspopup="true"
+                                        data-bs-toggle="dropdown" role="button"
+                                        aria-haspopup="true"
                                         aria-expanded="false">Skills</button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item">Skill
@@ -184,19 +183,16 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div id="btnContainer" style="float: right;">
+                        <div id="btnContainer">
                             <button class="btn" onclick="listView()">
-                                <i class="fa fa-bars"></i> <img
-                                    src="images/list.png" alt="">
+                                <i class="fa fa-bars"></i> List
                             </button>
                             <button class="btn active" onclick="gridView()">
-                                <i class="fa fa-th-large"></i> <img
-                                    src="images/grid.png" alt="">
+                                <i class="fa fa-th-large"></i> Grid
                             </button>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="row">
                     <div class="column" style="background-color: #aaa">
@@ -253,6 +249,7 @@
             </div>
             <div class="col-1"></div>
         </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
     <script src="js/trial.js"></script>
 </html>
