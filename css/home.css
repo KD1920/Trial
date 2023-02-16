@@ -1,0 +1,137 @@
+#search {
+  align-content: center;
+  height: 22px;
+  width: 22px;
+}
+#header {
+  height: 150px;
+}
+.form-control {
+  margin-left: 15px;
+  height: 27px;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  #notification {
+    display: none;
+  }
+}
+#notification {
+  margin-top: 22px;
+}
+.navigationBar {
+  justify-content: space-between;
+}
+.container-fluid {
+  padding: 0;
+}
+.userProfile {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.userProfile img {
+  width: 100%;
+  height: auto;
+}
+
+.mainRow {
+  height: 4em;
+}
+
+.sortRow {
+  height: 4em !important;
+}
+
+.nav-link {
+  border: none;
+  background: none;
+  color: black;
+  text-align: center;
+}
+
+footer {
+  position: realtive;
+  bottom: 0;
+  height: 10vh;
+}
+
+.privacylink {
+  position: absolute;
+  margin-top: 1vh;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0;
+  }
+
+  footer {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+
+  .privacylink {
+    position: unset;
+    margin-top: 40vh !important;
+    padding: 0;
+  }
+}
+
+/*  */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.pagination {
+  justify-content: center;
+}
+.pagination a {
+  color: black;
+  /* float: left; */
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
