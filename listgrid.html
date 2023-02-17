@@ -1,252 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="listgrid.css">
-        <title>listgrid</title>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>toggle card list grid</h1>
-            </header>
-            <div class="toggle-btns">
-                <i class="fas fa-list"><img src="/images/list.png" alt=""></i>
-                <i class="fas fa-th-large"><img src="/images/grid.png
-                        " alt=""></i>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="listgrid.css">
+    <link type="text/javascript" href="">
+    <link type="text/javascript" href="~/js/bootstrap.bundle.min.js">
+    <title>listgrid</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>toggle card list grid</h1>
+      </header>
+      <div class="toggle-btns">
+        <i class="fas fa-list active list-layout"
+          onclick="LL();"><img
+            src="/images/list.png" alt=""></i>
+        <i class="fas fa-th-large grid-layout"
+          onclick="GG();"><img
+            src="/images/grid.png" alt=""></i>
+      </div>
+      <div class="project-container list">
+        <div class="project">
+          <div class="top-menu">
+            <i class="fas fa-ellipsis-h"><img
+                src="/images/info.png"
+                alt=""></i>
+            <i class="far fa-star"><img
+                src="/images/star-empty.png"
+                alt=""></i>
+          </div>
+          <img src="images/volunteer1.png" alt="" class="profile-img">
+          <h2 class="project-title">revolution</h2>
+          <p class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Necessitatibus, totam sequi. Sint cum totam
+            aliquid fugiat possimus natus vitae, dolores asperiores
+            maiores, facere ab voluptas? Obcaecati aut odit
+            expeditap
+            dignissimos.
+          </p>
+          <div class="project-info">
+            <div class="detail flex">
+              <div class="info">
+                <i class="fas fa-tasks"><img
+                    src="/images/list.png" alt=""></i>
+                <p>task:commercial project</p>
+              </div>
             </div>
-            <div class="project-container list">
-                <div class="project">
-                    <div class="top-menu">
-                        <i class="fas fa-ellipsis-h"
-                            onclick="toggleView(event);"><img
-                                src="/images/info.png"
-                                alt=""></i>
-                        <i class="far fa-star" onclick="toggleView(event);"><img
-                                src="/images/star-empty.png"
-                                alt=""></i>
-                    </div>
-                    <img src="images/volunteer1.png" alt="" class="profile-img">
-                    <h2 class="project-title">revolution</h2>
-                    <p class="project-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Necessitatibus, totam sequi. Sint cum totam
-                        aliquid fugiat possimus natus vitae, dolores asperiores
-                        maiores, facere ab voluptas? Obcaecati aut odit
-                        expeditap
-                        dignissimos.
-                    </p>
-                    <div class="project-info">
-                        <div class="detail flex">
-                            <div class="info">
-                                <i class="fas fa-tasks"><img
-                                        src="/images/list.png" alt=""></i>
-                                <p>task:commercial project</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <div class="info">
-                                <i class="far fa-calendar-alt"> <img
-                                        src="images/calender.png" alt=""></i>
-                                <p>dare: 9.9.2001</p>
-                            </div>
-                            <div class="members">
-                                <img src="/images/volunteer2.png" alt="">
-                                <img src="/images/volunteer3.png" alt="">
-                                <img src="/images/volunteer4.png" alt="">
+            <div class="detail">
+              <div class="info">
+                <i class="far fa-calendar-alt"> <img
+                    src="images/calender.png" alt=""></i>
+                <p>dare: 9.9.2001</p>
+              </div>
+              <div class="members">
+                <img src="/images/volunteer2.png" alt="">
+                <img src="/images/volunteer3.png" alt="">
+                <img src="/images/volunteer4.png" alt="">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="top-menu">
-                        <i class="fas fa-ellipsis-h"><img src="/images/info.png"
-                                alt=""></i>
-                        <i class="far fa-star"><img src="/images/star-empty.png"
-                                alt=""></i>
-                    </div>
-                    <img src="images/volunteer2.png" alt="" class="profile-img">
-                    <h2 class="project-title">revolution</h2>
-                    <p class="project-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Necessitatibus, totam sequi. Sint cum totam
-                        aliquid fugiat possimus natus vitae, dolores asperiores
-                        maiores, facere ab voluptas? Obcaecati aut odit
-                        expeditap
-                        dignissimos.
-                    </p>
-                    <div class="project-info">
-                        <div class="detail flex">
-                            <div class="info">
-                                <i class="fas fa-tasks"><img
-                                        src="/images/list.png" alt=""></i>
-                                <p>task:commercial project</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <div class="info">
-                                <i class="far fa-calendar-alt"> <img
-                                        src="images/calender.png" alt=""></i>
-                                <p>dare: 9.9.2001</p>
-                            </div>
-                            <div class="members">
-                                <img src="/images/volunteer1.png" alt="">
-                                <img src="/images/volunteer2.png" alt="">
-                                <img src="/images/volunteer3.png" alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="top-menu">
-                        <i class="fas fa-ellipsis-h"><img src="/images/info.png"
-                                alt=""></i>
-                        <i class="far fa-star"><img src="/images/star-empty.png"
-                                alt=""></i>
-                    </div>
-                    <img src="images/volunteer3.png" alt="" class="profile-img">
-                    <h2 class="project-title">revolution</h2>
-                    <p class="project-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Necessitatibus, totam sequi. Sint cum totam
-                        aliquid fugiat possimus natus vitae, dolores asperiores
-                        maiores, facere ab voluptas? Obcaecati aut odit
-                        expeditap
-                        dignissimos.
-                    </p>
-                    <div class="project-info">
-                        <div class="detail flex">
-                            <div class="info">
-                                <i class="fas fa-tasks"><img
-                                        src="/images/list.png" alt=""></i>
-                                <p>task:commercial project</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <div class="info">
-                                <i class="far fa-calendar-alt"> <img
-                                        src="images/calender.png" alt=""></i>
-                                <p>dare: 9.9.2001</p>
-                            </div>
-                            <div class="members">
-                                <img src="/images/volunteer1.png" alt="">
-                                <img src="/images/volunteer2.png" alt="">
-                                <img src="/images/volunteer4.png" alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="top-menu">
-                        <i class="fas fa-ellipsis-h"><img src="/images/info.png"
-                                alt=""></i>
-                        <i class="far fa-star"><img src="/images/star-empty.png"
-                                alt=""></i>
-                    </div>
-                    <img src="images/volunteer4.png" alt="" class="profile-img">
-                    <h2 class="project-title">revolution</h2>
-                    <p class="project-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Necessitatibus, totam sequi. Sint cum totam
-                        aliquid fugiat possimus natus vitae, dolores asperiores
-                        maiores, facere ab voluptas? Obcaecati aut odit
-                        expeditap
-                        dignissimos.
-                    </p>
-                    <div class="project-info">
-                        <div class="detail flex">
-                            <div class="info">
-                                <i class="fas fa-tasks"><img
-                                        src="/images/list.png" alt=""></i>
-                                <p>task:commercial project</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <div class="info">
-                                <i class="far fa-calendar-alt"> <img
-                                        src="images/calender.png" alt=""></i>
-                                <p>dare: 9.9.2001</p>
-                            </div>
-                            <div class="members">
-                                <img src="/images/volunteer1.png" alt="">
-                                <img src="/images/volunteer2.png" alt="">
-                                <img src="/images/volunteer3.png" alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="top-menu">
-                        <i class="fas fa-ellipsis-h"><img src="/images/info.png"
-                                alt=""></i>
-                        <i class="far fa-star"><img src="/images/star-empty.png"
-                                alt=""></i>
-                    </div>
-                    <img src="images/volunteer3.png" alt="" class="profile-img">
-                    <h2 class="project-title">revolution</h2>
-                    <p class="project-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Necessitatibus, totam sequi. Sint cum totam
-                        aliquid fugiat possimus natus vitae, dolores asperiores
-                        maiores, facere ab voluptas? Obcaecati aut odit
-                        expeditap
-                        dignissimos.
-                    </p>
-                    <div class="project-info">
-                        <div class="detail flex">
-                            <div class="info">
-                                <i class="fas fa-tasks"><img
-                                        src="/images/list.png" alt=""></i>
-                                <p>task:commercial project</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <div class="info">
-                                <i class="far fa-calendar-alt"> <img
-                                        src="images/calender.png" alt=""></i>
-                                <p>dare: 9.9.2001</p>
-                            </div>
-                            <div class="members">
-                                <img src="/images/volunteer2.png" alt="">
-                                <img src="/images/volunteer3.png" alt="">
-                                <img src="/images/volunteer4.png" alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <script>
-            function toggleView(e){
-                console.log(e.target);
-                if(e.target.classList.contains('list-layout')){
+        <div class="project">
+          <div class="top-menu">
+            <i class="fas fa-ellipsis-h"><img src="/images/info.png"
+                alt=""></i>
+            <i class="far fa-star"><img src="/images/star-empty.png"
+                alt=""></i>
+          </div>
+          <img src="images/volunteer2.png" alt="" class="profile-img">
+          <h2 class="project-title">revolution</h2>
+          <p class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Necessitatibus, totam sequi. Sint cum totam
+            aliquid fugiat possimus natus vitae, dolores asperiores
+            maiores, facere ab voluptas? Obcaecati aut odit
+            expeditap
+            dignissimos.
+          </p>
+          <div class="project-info">
+            <div class="detail flex">
+              <div class="info">
+                <i class="fas fa-tasks"><img
+                    src="/images/list.png" alt=""></i>
+                <p>task:commercial project</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="info">
+                <i class="far fa-calendar-alt"> <img
+                    src="images/calender.png" alt=""></i>
+                <p>dare: 9.9.2001</p>
+              </div>
+              <div class="members">
+                <img src="/images/volunteer1.png" alt="">
+                <img src="/images/volunteer2.png" alt="">
+                <img src="/images/volunteer3.png" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="top-menu">
+            <i class="fas fa-ellipsis-h"><img src="/images/info.png"
+                alt=""></i>
+            <i class="far fa-star"><img src="/images/star-empty.png"
+                alt=""></i>
+          </div>
+          <img src="images/volunteer3.png" alt="" class="profile-img">
+          <h2 class="project-title">revolution</h2>
+          <p class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Necessitatibus, totam sequi. Sint cum totam
+            aliquid fugiat possimus natus vitae, dolores asperiores
+            maiores, facere ab voluptas? Obcaecati aut odit
+            expeditap
+            dignissimos.
+          </p>
+          <div class="project-info">
+            <div class="detail flex">
+              <div class="info">
+                <i class="fas fa-tasks"><img
+                    src="/images/list.png" alt=""></i>
+                <p>task:commercial project</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="info">
+                <i class="far fa-calendar-alt"> <img
+                    src="images/calender.png" alt=""></i>
+                <p>dare: 9.9.2001</p>
+              </div>
+              <div class="members">
+                <img src="/images/volunteer1.png" alt="">
+                <img src="/images/volunteer2.png" alt="">
+                <img src="/images/volunteer4.png" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="top-menu">
+            <i class="fas fa-ellipsis-h"><img src="/images/info.png"
+                alt=""></i>
+            <i class="far fa-star"><img src="/images/star-empty.png"
+                alt=""></i>
+          </div>
+          <img src="images/volunteer4.png" alt="" class="profile-img">
+          <h2 class="project-title">revolution</h2>
+          <p class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Necessitatibus, totam sequi. Sint cum totam
+            aliquid fugiat possimus natus vitae, dolores asperiores
+            maiores, facere ab voluptas? Obcaecati aut odit
+            expeditap
+            dignissimos.
+          </p>
+          <div class="project-info">
+            <div class="detail flex">
+              <div class="info">
+                <i class="fas fa-tasks"><img
+                    src="/images/list.png" alt=""></i>
+                <p>task:commercial project</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="info">
+                <i class="far fa-calendar-alt"> <img
+                    src="images/calender.png" alt=""></i>
+                <p>dare: 9.9.2001</p>
+              </div>
+              <div class="members">
+                <img src="/images/volunteer1.png" alt="">
+                <img src="/images/volunteer2.png" alt="">
+                <img src="/images/volunteer3.png" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="top-menu">
+            <i class="fas fa-ellipsis-h"><img src="/images/info.png"
+                alt=""></i>
+            <i class="far fa-star"><img src="/images/star-empty.png"
+                alt=""></i>
+          </div>
+          <img src="images/volunteer3.png" alt="" class="profile-img">
+          <h2 class="project-title">revolution</h2>
+          <p class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Necessitatibus, totam sequi. Sint cum totam
+            aliquid fugiat possimus natus vitae, dolores asperiores
+            maiores, facere ab voluptas? Obcaecati aut odit
+            expeditap
+            dignissimos.
+          </p>
+          <div class="project-info">
+            <div class="detail flex">
+              <div class="info">
+                <i class="fas fa-tasks"><img
+                    src="/images/list.png" alt=""></i>
+                <p>task:commercial project</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="info">
+                <i class="far fa-calendar-alt"> <img
+                    src="images/calender.png" alt=""></i>
+                <p>dare: 9.9.2001</p>
+              </div>
+              <div class="members">
+                <img src="/images/volunteer2.png" alt="">
+                <img src="/images/volunteer3.png" alt="">
+                <img src="/images/volunteer4.png" alt="">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+            // function toggleView(e){
+            //     console.log(e.target);
+            //     if(e.target.classList.contains('list-layout')){
+            //         console.log('list-layout');
+            //         document.querySelector('.toggle-btns').children[0].classList.add('active');
+            //         document.querySelector('.toggle-btns').children[1].classList.remove('active');
+
+            //         document.querySelector('.project-container').classList.add('list');
+            //         document.querySelector('.project-container').classList.remove('grid');
+
+            //     }
+            //     else if(e.target.classList.contains('grid-layout')){
+            //         console.log('grid-layout');
+            //         document.querySelector('.toggle-btns').children[0].classList.remove('active');
+            //         document.querySelector('.toggle-btns').children[1].classList.add('active');
+
+            //         document.querySelector('.project-container').classList.remove('list');
+            //         document.querySelector('.project-container').classList.add('grid');
+
+            //     }
+            //     }
+                function LL(){
                     console.log('list-layout');
-                    document.querySelector('.toggle-btns').children[0].classList.add('acive');
-                    document.querySelector('.toggle-btns').children[1].classList.remove('acive');
+                    document.querySelector('.toggle-btns').children[0].classList.add('active');
+                    document.querySelector('.toggle-btns').children[1].classList.remove('active');
 
                     document.querySelector('.project-container').classList.add('list');
                     document.querySelector('.project-container').classList.remove('grid');
 
                 }
-                else if(e.target.classList.contains('grid-layout')){
+                function GG(){
                     console.log('grid-layout');
-                    document.querySelector('.toggle-btns').children[0].classList.remove('acive');
-                    document.querySelector('.toggle-btns').children[1].classList.add('acive');
+                    document.querySelector('.toggle-btns').children[0].classList.remove('active');
+                    document.querySelector('.toggle-btns').children[1].classList.add('active');
 
                     document.querySelector('.project-container').classList.remove('list');
                     document.querySelector('.project-container').classList.add('grid');
-
-                }
                 }
             
         </script>
-    </body>
+  </body>
 </html>
