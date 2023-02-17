@@ -16,6 +16,7 @@ body
     width: 100%
     height: 100%
     background: $primary-color
+    margin-bottom: 25rem
     display: flex
     align-items: center
     justify-content: center
@@ -39,6 +40,7 @@ header
     margin-bottom: 2rem
 
     i
+       img
         width: 50px
         background: darken ($primary-color, 10)
         color: #ffffff
@@ -61,3 +63,138 @@ header
 .project-container
     .project
         background: #ffffff
+        padding: 2rem
+        border-radius: 0.5rem
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2)
+        margin-bottom: 1rem
+        &:hover
+            transform: scale(1.02)
+            box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.2)
+
+        .project-title
+            color: $primary-color
+            font-weight: 500
+
+        .project-desc,
+        .project-info
+            color: $primary-color
+
+    &.list
+        display: grids
+        grid-template-columns: 1fr
+        grid-gap: 1rem
+
+
+        .project
+                display: grid
+                grid-template-columns: 100px 1fr 360px
+                grid-template-rows: auto auto auto
+                grid-gap: 1rem
+
+                .top-menu
+                    grid-column: 1/4
+                    grid-row: 1/2
+                    justify-self: end
+                    i
+                        img
+                            width: 30px
+                            color: $secondary-color
+                            cursor: pointer
+                            margin-left: 1rem
+
+                .profile-img
+                    grid-column: 1/2
+                    grid-row: 2/4
+                    justify-self: center
+                    align-self: center
+                    width: 80px
+                    height: 80px
+                    border-radius: 50%
+
+                .project-title
+                    grid-column: 2/4
+                    grid-row: 2/3
+
+                .project-desc
+                    grid-column: 2/3
+                    grid-row: 3/4
+                    margin-left: 4rem
+
+                .project-info
+                    grid-column: 3/4
+                    grid-row: 3/4
+
+                    .detail
+                        .info
+                            display: flex
+                            i
+                                img
+                                    width: 30px
+                                    font-size: 1.2rem
+                        
+                        .members
+                            img
+                                width: 50px
+                                border-radius: 50%
+
+                        &.flex
+                            display: flez
+                            align-items: center
+                            justify-content: space-between
+                            img
+                                width: 40px
+                                height: 40px
+                                border: 2px solid $primary-color
+                                border-radius: 50%
+                                margin-left: -1rem
+
+    &.grid
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 2rem
+
+        .project
+            display: grid
+            grid-template-columns: 1fr
+
+            .top-menu
+                i
+                    img
+                        width: 30px
+                        color: $secondary-color
+                        cursor: pointer
+                        margin-left: 1rem
+
+            .profile-img
+                width: 60px
+                height: 60px
+                margin-bottom: 1rem
+
+            .project-title,
+            .project-desc,
+            .project-info
+                margin-bottom: 1rem
+
+                .detail
+                    .info
+                        display: flex
+                        i
+                            img
+                                width: 30px
+                                font-size: 1.2rem
+
+                    .members
+                        img
+                            width: 50px
+                            border-radius: 50%
+
+                    &.flex
+                        display: flez
+                        align-items: center
+                        justify-content: space-between
+                        img
+                            width: 40px
+                            height: 40px
+                            border: 2px solid $primary-color
+                            border-radius: 50%
+                            margin-left: -1rem
