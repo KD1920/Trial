@@ -3,8 +3,14 @@
   height: 22px;
   width: 22px;
 }
+#user-name {
+  align-self: center;
+}
 #header {
   height: 150px;
+}
+#drop {
+  padding-top: 20%;
 }
 .form-control {
   margin-left: 15px;
@@ -13,6 +19,12 @@
 }
 @media screen and (max-width: 768px) {
   #notification {
+    display: none;
+  }
+  #user-name {
+    display: none;
+  }
+  #drop {
     display: none;
   }
 }
