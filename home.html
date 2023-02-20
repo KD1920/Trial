@@ -1,348 +1,338 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
-    </head>
-    <body>
-        <div id="header" class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
 
-                <nav id="upper-row" class="navbar border-bottom border-2
+<head>
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="newhome.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+</head>
+
+<body>
+    <div id="header" class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+
+            <nav class="navbar border-bottom border-2
                     navbar-expand-md
                     navbar-light
                     bg-light">
-                    <div class="container-fluid d-flex navigationBar">
-                        <button class="navbar-toggler collapsed" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarColor03"
-                            aria-controls="navbarColor03" aria-expanded="false"
-                            aria-label="Toggle
+                <div class="container-fluid d-flex navigationBar">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle
                             navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="navbar-collapse collapse"
-                            id="navbarColor03"
-                            \>
-                            <ul class="navbar-nav me-auto ">
-                                <li class="nav-item ps-5">
-                                    <a class="nav-link" href="#">Stories</a>
-                                </li>
-                                <li class="nav-item ps-5 dropdown">
-                                    <a class="nav-link dropdown-toggle"
-                                        data-bs-toggle="dropdown" href="#"
-                                        role="button" aria-haspopup="true"
-                                        aria-expanded="false">Policy</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Volunteering</a>
-                                        <a class="dropdown-item" href="#">Sponsored</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="d-flex">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarColor03" \>
+                        <ul class="navbar-nav me-auto ">
+                            <li class="nav-item ps-5">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                            <li class="nav-item ps-5 dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Policy</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Volunteering</a>
+                                    <a class="dropdown-item" href="#">Sponsored</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
 
-                            <ul class="navbar-nav me-auto ">
-                                <li class="nav-item ps-5">
-                                    <a href="#"><img id="notification"
-                                            src="images/bell.png" alt=""></a>
-                                </li>
-                                <li class="nav-item ps-2 dropdown">
-                                    <div id="dropdown">
-                                        <ul class="navbar-nav me-auto ">
-                                            <li>
-                                                <a class="nav-link "
-                                                    data-bs-toggle="dropdown"
-                                                    href="#"
-                                                    role="button"
-                                                    aria-haspopup="true"
-                                                    aria-expanded="false"> <img
-                                                        class="userProfile"
-                                                        src="images/user-img.png"
-                                                        alt=""></a>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item"
-                                                        href="#">Dashboard</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">My
-                                                        Account</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">Help
-                                                        Center</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">Logout</a>
-                                                </div>
+                        <ul class="navbar-nav me-auto ">
+                            <li class="nav-item ps-5">
+                                <a href="#"><img id="notification" src="images/bell.png" alt=""></a>
+                            </li>
+                            <li class="nav-item ps-2 dropdown">
+                                <div id="dropdown">
+                                    <ul class="navbar-nav me-auto ">
+                                        <li>
+                                            <a class="nav-link " data-bs-toggle="dropdown" href="#" role="button"
+                                                aria-haspopup="true" aria-expanded="false"> <img class="userProfile"
+                                                    src="images/user-img.png" alt=""></a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Dashboard</a>
+                                                <a class="dropdown-item" href="#">My
+                                                    Account</a>
+                                                <a class="dropdown-item" href="#">Help
+                                                    Center</a>
+                                                <a class="dropdown-item" href="#">Logout</a>
+                                            </div>
 
-                                            </li>
+                                        </li>
 
-                                            <li id="user-name"> <a
-                                                    class="nav-link "
-                                                    data-bs-toggle="dropdown"
-                                                    href="#"
-                                                    role="button"
-                                                    aria-haspopup="true"
-                                                    aria-expanded="false"
-                                                    style="text-decoration:
+                                        <li id="user-name"> <a class="nav-link " data-bs-toggle="dropdown" href="#"
+                                                role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration:
                                                     none; color: black;">Evan
-                                                    Donohue</a>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item"
-                                                        href="#">Dashboard</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">My
-                                                        Account</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">Help
-                                                        Center</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">Logout</a>
-                                                </div>
-                                            </li>
-                                            <li><a id="drop"
-                                                    class="nav-link
-                                                    dropdown-toggle"
-                                                    data-bs-toggle="dropdown"
-                                                    href="#"
-                                                    role="button"
-                                                    aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                </a>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item"
-                                                        href="#">Dashboard</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">My
-                                                        Account</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">Help
-                                                        Center</a>
-                                                    <a class="dropdown-item"
-                                                        href="#">Logout</a>
-                                                </div></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <nav id="bottom-row" class=" border-bottom border-5
+                                                Donohue</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Dashboard</a>
+                                                <a class="dropdown-item" href="#">My
+                                                    Account</a>
+                                                <a class="dropdown-item" href="#">Help
+                                                    Center</a>
+                                                <a class="dropdown-item" href="#">Logout</a>
+                                            </div>
+                                        </li>
+                                        <li><a id="drop" class="nav-link
+                                                    dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Dashboard</a>
+                                                <a class="dropdown-item" href="#">My
+                                                    Account</a>
+                                                <a class="dropdown-item" href="#">Help
+                                                    Center</a>
+                                                <a class="dropdown-item" href="#">Logout</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+            <nav class=" border-bottom border-5
                         navbar-expand-md
                         navbar-light
                         bg-light">
-                        <div class="row mainRow">
-                            <div class="col-6 pt-3 border-end border-1
+                <div class="row mainRow">
+                    <div class="col-6 pt-3 border-end border-1
                                 text-center">
-                                <div class="input-group rounded">
-                                    <img id="search" src="images/search.png"
-                                        alt="search-addon">
-                                    <input type="search" class="form-control
-                                        rounded"
-                                        placeholder="Search mission..."
-                                        aria-label="Search"
-                                        aria-describedby="search-addon">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="row sortRow container-fluid d-flex
+                        <div class="input-group rounded">
+                            <img id="search" src="images/search.png" alt="search-addon">
+                            <input type="search" class="form-control
+                                        rounded" placeholder="Search mission..." aria-label="Search"
+                                aria-describedby="search-addon">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row sortRow container-fluid d-flex
                                     navigationBar">
-                                    <button class="navbar-toggler collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#navbarColor02"
-                                        aria-controls="navbarColor02"
-                                        aria-expanded="false"
-                                        aria-label="Toggle
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
+                                aria-label="Toggle
                                         navigation">0
-                                        <span><img
-                                                src="/images/filter.png" alt=""></span>
-                                    </button>
-                                    <div class="navbar-collapse collapse "
-                                        id="navbarColor02"
-                                        \>
-                                        <ul class="navbar-nav me-auto col-12">
-                                            <li class="col-3 nav-item ps-1
+                                <span><img src="/images/filter.png" alt=""></span>
+                            </button>
+                            <div class="navbar-collapse collapse " id="navbarColor02" \>
+                                <ul class="navbar-nav me-auto col-12">
+                                    <li class="col-3 nav-item ps-1
                                                 dropdown">
-                                                <div class=" pt-2 dropdown
+                                        <div class=" pt-2 dropdown
                                                     border-end
                                                     border-1">
-                                                    <button class="nav-link
-                                                        dropdown-toggle"
-                                                        data-bs-toggle="dropdown"
-                                                        role="button"
-                                                        aria-haspopup="true"
-                                                        aria-expanded="false">Country</button>
-                                                    <div class="dropdown-menu">
-                                                        <a
-                                                            class="dropdown-item">Country
-                                                            1</a>
-                                                        <a
-                                                            class="dropdown-item">Country
-                                                            2</a>
-                                                        <a
-                                                            class="dropdown-item">Country
-                                                            3</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="col-3 nav-item ps-1
+                                            <button class="nav-link
+                                                        dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                                aria-haspopup="true" aria-expanded="false">Country</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item">Country
+                                                    1</a>
+                                                <a class="dropdown-item">Country
+                                                    2</a>
+                                                <a class="dropdown-item">Country
+                                                    3</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 nav-item ps-1
                                                 dropdown">
-                                                <div class="pt-2
+                                        <div class="pt-2
                                                     border-end
-                                                    border-1"><button
-                                                        class="nav-link
-                                                        dropdown-toggle"
-                                                        data-bs-toggle="dropdown"
-                                                        role="button"
-                                                        aria-haspopup="true"
-                                                        aria-expanded="false">City</button>
-                                                    <div class="dropdown-menu">
-                                                        <a
-                                                            class="dropdown-item">City
-                                                            1</a>
-                                                        <a
-                                                            class="dropdown-item">City
-                                                            2</a>
-                                                        <a
-                                                            class="dropdown-item">City
-                                                            3</a>
-                                                    </div></div>
-                                            </li>
-                                            <li class="col-3 nav-item ps-1
+                                                    border-1"><button class="nav-link
+                                                        dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                                aria-haspopup="true" aria-expanded="false">City</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item">City
+                                                    1</a>
+                                                <a class="dropdown-item">City
+                                                    2</a>
+                                                <a class="dropdown-item">City
+                                                    3</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 nav-item ps-1
                                                 dropdown">
-                                                <div class="pt-2
+                                        <div class="pt-2
                                                     border-end
-                                                    border-1"><button
-                                                        class="nav-link
-                                                        dropdown-toggle"
-                                                        data-bs-toggle="dropdown"
-                                                        role="button"
-                                                        aria-haspopup="true"
-                                                        aria-expanded="false">Theme</button>
-                                                    <div class="dropdown-menu">
-                                                        <a
-                                                            class="dropdown-item">Theme
-                                                            1</a>
-                                                        <a
-                                                            class="dropdown-item">Theme
-                                                            2</a>
-                                                        <a
-                                                            class="dropdown-item">Theme
-                                                            3</a>
-                                                    </div></div>
-                                            </li>
-                                            <li class="col-3 nav-item ps-1
+                                                    border-1"><button class="nav-link
+                                                        dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                                aria-haspopup="true" aria-expanded="false">Theme</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item">Theme
+                                                    1</a>
+                                                <a class="dropdown-item">Theme
+                                                    2</a>
+                                                <a class="dropdown-item">Theme
+                                                    3</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-3 nav-item ps-1
                                                 dropdown">
-                                                <div class="pt-2
+                                        <div class="pt-2
                                                     border-end
-                                                    border-1"><button
-                                                        class="nav-link
-                                                        dropdown-toggle"
-                                                        data-bs-toggle="dropdown"
-                                                        role="button"
-                                                        aria-haspopup="true"
-                                                        aria-expanded="false">Skills</button>
-                                                    <div class="dropdown-menu">
-                                                        <a
-                                                            class="dropdown-item">Skill
-                                                            1</a>
-                                                        <a
-                                                            class="dropdown-item">Skill
-                                                            2</a>
-                                                        <a
-                                                            class="dropdown-item">Skill
-                                                            3</a>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                                    border-1"><button class="nav-link
+                                                        dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                                aria-haspopup="true" aria-expanded="false">Skills</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item">Skill
+                                                    1</a>
+                                                <a class="dropdown-item">Skill
+                                                    2</a>
+                                                <a class="dropdown-item">Skill
+                                                    3</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+
+            <div class="row">
+                <div class="col-12">
+                    <div id="btnContainer">
+                        <select class="sort">
+                            <option value="" hidden selected>Sort by</option>
+                            <option value="Country">Country</option>
+                            <option value="City">City</option>
+                            <option value="Theme">Theme</option>
+                            <option value="Skills">Skills</option>
+                        </select>
+                        <button class="btn active" onclick="gridView()">
+                            <i class="bi bi-grid">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                                </svg>
+                            </i></button>
+                        <button class="btn" onclick="listView()">
+                            <i class="bi bi-list">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </i></button>
+
+                    </div>
+                    <div class="exp fs-3">
+                        Explore <b>72 mission</b>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="images\Grow-Trees-On-the-path-to-environment-sustainability.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                        </div>
+                        <div class="card-subtitle">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Eaque sequi suscipit
+                            veniam, placeat ex sit esse,
+                        </div>
+
+                        <div class="rating">
+                            <div class="stars">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                                <img src="images/star.png" alt="">
+                            </div>
+                            <div class="name">
+                                some name of rate
+                            </div>
+                        </div>
+                        <div class="date">
+                            <div class="d-flex justify-content-center" style="width:100%">
+                            <div class="timeline text-center d-flex justify-content-center">From 10/01/2019 until 25/2/2019
+                            </div>
+                        </div>
+                            <div class="people border-top border-bottom">
+                                <div class="seats">
+                                    <div class="deadline">
+                                        <div class="icon1">
+                                            <img src="images/deadline.png" alt="">
+                                        </div>
+                                        <div class="left">
+                                            <ul>
+                                                <li type="none">09/01/2019</li>
+                                                <li type="none">Deadline</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="icon2">
+                                            <img src="images/Seats-left.png" alt="">
+                                        </div>
+                                        <ul>
+                                            <li type="none">10</li>
+                                            <li type="none">seats left</li>
                                         </ul>
+                                        <div class="left">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                    </nav>
-                </div>
-                <div class="col-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div id="btnContainer">
-                                <button class="btn" onclick="listView()">
-                                    <i class="fa fa-bars"></i> <img
-                                        src="/images/list.png" alt="List">
-                                </button>
-                                <button class="btn active"
-                                    onclick="gridView()">
-                                    <i class="fa fa-th-large"></i> <img
-                                        src="images/grid.png" alt="Grid">
-                                </button>
-                            </div>
+                        <div id="apply">
+                            <button class="apply">
+                                Apply
+                                <img src="images/right-arrow.png" alt="">
+                            </button>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="column" style="background-color: #aaa">
-                            <h2>Column 1</h2>
-                            <p>Some text..</p>
-                        </div>
-                        <div class="column" style="background-color: #bbb">
-                            <h2>Column 2</h2>
-                            <p>Some text..</p>
-                        </div>
-                        <div class="column" style="background-color: #ccc">
-                            <h2>Column 3</h2>
-                            <p>Some text..</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column" style="background-color: #bbb">
-                            <h2>Column 2</h2>
-                            <p>Some text..</p>
-                        </div>
-                        <div class="column" style="background-color: #ccc">
-                            <h2>Column 3</h2>
-                            <p>Some text..</p>
-                        </div>
-                        <div class="column" style="background-color: #ddd">
-                            <h2>Column 4</h2>
-                            <p>Some text..</p>
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <a href="#"><img src="images/previous.png" alt=""></a>
-                        <a href="#"><img src="images/left.png" alt=""></a>
-                        <a class="active" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#"><img src="images/right-arrow1.png"
-                                alt=""></a>
-                        <a href="#"><img src="images/next.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <footer class=" container-fluid border-2 border-top">
 
-                        <a class="privacylink" href="#">Privacy Policy</a>
-                    </footer>
-                </div>
-                <div class="col-1"></div>
             </div>
-        </body>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/trial.js"></script>
-    </html>
+
+            <div class="pagination">
+                <a href="#"><img src="images/previous.png" alt=""></a>
+                <a href="#"><img src="images/left.png" alt=""></a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#"><img src="images/right-arrow1.png" alt=""></a>
+                <a href="#"><img src="images/next.png" alt=""></a>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <footer class=" container-fluid border-2 border-top">
+
+                <a class="privacylink" href="#">Privacy Policy</a>
+            </footer>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/trial.js"></script>
+
+</html>

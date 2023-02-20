@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+        <link rel="stylesheet" href="listgrid.css">
+    </head>
+    <body>
+        <div id="header" class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+
+                <nav id="upper-row" class="navbar border-bottom border-2
+                    navbar-expand-md
+                    navbar-light
+                    bg-light">
+                    <div class="container-fluid d-flex navigationBar">
+                        <button class="navbar-toggler collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarColor03"
+                            aria-controls="navbarColor03" aria-expanded="false"
+                            aria-label="Toggle
+                            navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse"
+                            id="navbarColor03"
+                            \>
+                            <ul class="navbar-nav me-auto ">
+                                <li class="nav-item ps-5">
+                                    <a class="nav-link" href="#">Stories</a>
+                                </li>
+                                <li class="nav-item ps-5 dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown" href="#"
+                                        role="button" aria-haspopup="true"
+                                        aria-expanded="false">Policy</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Volunteering</a>
+                                        <a class="dropdown-item" href="#">Sponsored</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex">
+
+                            <ul class="navbar-nav me-auto ">
+                                <li class="nav-item ps-5">
+                                    <a href="#"><img id="notification"
+                                            src="images/bell.png" alt=""></a>
+                                </li>
+                                <li class="nav-item ps-2 dropdown">
+                                    <div id="dropdown">
+                                        <ul class="navbar-nav me-auto ">
+                                            <li>
+                                                <a class="nav-link "
+                                                    data-bs-toggle="dropdown"
+                                                    href="#"
+                                                    role="button"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"> <img
+                                                        class="userProfile"
+                                                        src="images/user-img.png"
+                                                        alt=""></a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item"
+                                                        href="#">Dashboard</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">My
+                                                        Account</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">Help
+                                                        Center</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">Logout</a>
+                                                </div>
+
+                                            </li>
+
+                                            <li id="user-name"> <a
+                                                    class="nav-link "
+                                                    data-bs-toggle="dropdown"
+                                                    href="#"
+                                                    role="button"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                                    style="text-decoration:
+                                                    none; color: black;">Evan
+                                                    Donohue</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item"
+                                                        href="#">Dashboard</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">My
+                                                        Account</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">Help
+                                                        Center</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">Logout</a>
+                                                </div>
+                                            </li>
+                                            <li><a id="drop"
+                                                    class="nav-link
+                                                    dropdown-toggle"
+                                                    data-bs-toggle="dropdown"
+                                                    href="#"
+                                                    role="button"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item"
+                                                        href="#">Dashboard</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">My
+                                                        Account</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">Help
+                                                        Center</a>
+                                                    <a class="dropdown-item"
+                                                        href="#">Logout</a>
+                                                </div></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav id="bottom-row" class=" border-bottom border-5
+                        navbar-expand-md
+                        navbar-light
+                        bg-light">
+                        <div class="row mainRow">
+                            <div class="col-6 pt-3 border-end border-1
+                                text-center">
+                                <div class="input-group rounded">
+                                    <img id="search" src="images/search.png"
+                                        alt="search-addon">
+                                    <input type="search" class="form-control
+                                        rounded"
+                                        placeholder="Search mission..."
+                                        aria-label="Search"
+                                        aria-describedby="search-addon">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row sortRow container-fluid d-flex
+                                    navigationBar">
+                                    <button class="navbar-toggler collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#navbarColor02"
+                                        aria-controls="navbarColor02"
+                                        aria-expanded="false"
+                                        aria-label="Toggle
+                                        navigation">0
+                                        <span><img
+                                                src="/images/filter.png" alt=""></span>
+                                    </button>
+                                    <div class="navbar-collapse collapse "
+                                        id="navbarColor02"
+                                        \>
+                                        <ul class="navbar-nav me-auto col-12">
+                                            <li class="col-3 nav-item ps-1
+                                                dropdown">
+                                                <div class=" pt-2 dropdown
+                                                    border-end
+                                                    border-1">
+                                                    <button class="nav-link
+                                                        dropdown-toggle"
+                                                        data-bs-toggle="dropdown"
+                                                        role="button"
+                                                        aria-haspopup="true"
+                                                        aria-expanded="false">Country</button>
+                                                    <div class="dropdown-menu">
+                                                        <a
+                                                            class="dropdown-item">Country
+                                                            1</a>
+                                                        <a
+                                                            class="dropdown-item">Country
+                                                            2</a>
+                                                        <a
+                                                            class="dropdown-item">Country
+                                                            3</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-3 nav-item ps-1
+                                                dropdown">
+                                                <div class="pt-2
+                                                    border-end
+                                                    border-1"><button
+                                                        class="nav-link
+                                                        dropdown-toggle"
+                                                        data-bs-toggle="dropdown"
+                                                        role="button"
+                                                        aria-haspopup="true"
+                                                        aria-expanded="false">City</button>
+                                                    <div class="dropdown-menu">
+                                                        <a
+                                                            class="dropdown-item">City
+                                                            1</a>
+                                                        <a
+                                                            class="dropdown-item">City
+                                                            2</a>
+                                                        <a
+                                                            class="dropdown-item">City
+                                                            3</a>
+                                                    </div></div>
+                                            </li>
+                                            <li class="col-3 nav-item ps-1
+                                                dropdown">
+                                                <div class="pt-2
+                                                    border-end
+                                                    border-1"><button
+                                                        class="nav-link
+                                                        dropdown-toggle"
+                                                        data-bs-toggle="dropdown"
+                                                        role="button"
+                                                        aria-haspopup="true"
+                                                        aria-expanded="false">Theme</button>
+                                                    <div class="dropdown-menu">
+                                                        <a
+                                                            class="dropdown-item">Theme
+                                                            1</a>
+                                                        <a
+                                                            class="dropdown-item">Theme
+                                                            2</a>
+                                                        <a
+                                                            class="dropdown-item">Theme
+                                                            3</a>
+                                                    </div></div>
+                                            </li>
+                                            <li class="col-3 nav-item ps-1
+                                                dropdown">
+                                                <div class="pt-2
+                                                    border-end
+                                                    border-1"><button
+                                                        class="nav-link
+                                                        dropdown-toggle"
+                                                        data-bs-toggle="dropdown"
+                                                        role="button"
+                                                        aria-haspopup="true"
+                                                        aria-expanded="false">Skills</button>
+                                                    <div class="dropdown-menu">
+                                                        <a
+                                                            class="dropdown-item">Skill
+                                                            1</a>
+                                                        <a
+                                                            class="dropdown-item">Skill
+                                                            2</a>
+                                                        <a
+                                                            class="dropdown-item">Skill
+                                                            3</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="container">
+                        <div class="toggle-btns">
+                            <i class="fas fa-list active list-layout"
+                                onclick="LL();"><img
+                                    src="/images/list.png" alt=""></i>
+                            <i class="fas fa-th-large grid-layout"
+                                onclick="GG();"><img
+                                    src="/images/grid.png" alt=""></i>
+                        </div>
+                        <div class="project-container list">
+                            <div class="project">
+                                <div class="top-menu">
+                                    <i class="fas fa-ellipsis-h"><img
+                                            src="/images/info.png"
+                                            alt=""></i>
+                                    <i class="far fa-star"><img
+                                            src="/images/star-empty.png"
+                                            alt=""></i>
+                                </div>
+                                <img src="images/volunteer1.png" alt=""
+                                    class="profile-img">
+                                <h2 class="project-title">revolution</h2>
+                                <p class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Necessitatibus, totam sequi. Sint cum
+                                    totam
+                                    aliquid fugiat possimus natus vitae, dolores
+                                    asperiores
+                                    maiores, facere ab voluptas? Obcaecati aut
+                                    odit
+                                    expeditap
+                                    dignissimos.
+                                </p>
+                                <div class="project-info">
+                                    <div class="detail flex">
+                                        <div class="info">
+                                            <i class="fas fa-tasks"><img
+                                                    src="/images/list.png"
+                                                    alt=""></i>
+                                            <p>task:commercial project</p>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="info">
+                                            <i class="far fa-calendar-alt"> <img
+                                                    src="images/calender.png"
+                                                    alt=""></i>
+                                            <p>dare: 9.9.2001</p>
+                                        </div>
+                                        <div class="members">
+                                            <img src="/images/volunteer2.png"
+                                                alt="">
+                                            <img src="/images/volunteer3.png"
+                                                alt="">
+                                            <img src="/images/volunteer4.png"
+                                                alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="top-menu">
+                                    <i class="fas fa-ellipsis-h"><img
+                                            src="/images/info.png"
+                                            alt=""></i>
+                                    <i class="far fa-star"><img
+                                            src="/images/star-empty.png"
+                                            alt=""></i>
+                                </div>
+                                <img src="images/volunteer2.png" alt=""
+                                    class="profile-img">
+                                <h2 class="project-title">revolution</h2>
+                                <p class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Necessitatibus, totam sequi. Sint cum
+                                    totam
+                                    aliquid fugiat possimus natus vitae, dolores
+                                    asperiores
+                                    maiores, facere ab voluptas? Obcaecati aut
+                                    odit
+                                    expeditap
+                                    dignissimos.
+                                </p>
+                                <div class="project-info">
+                                    <div class="detail flex">
+                                        <div class="info">
+                                            <i class="fas fa-tasks"><img
+                                                    src="/images/list.png"
+                                                    alt=""></i>
+                                            <p>task:commercial project</p>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="info">
+                                            <i class="far fa-calendar-alt"> <img
+                                                    src="images/calender.png"
+                                                    alt=""></i>
+                                            <p>dare: 9.9.2001</p>
+                                        </div>
+                                        <div class="members">
+                                            <img src="/images/volunteer1.png"
+                                                alt="">
+                                            <img src="/images/volunteer2.png"
+                                                alt="">
+                                            <img src="/images/volunteer3.png"
+                                                alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="top-menu">
+                                    <i class="fas fa-ellipsis-h"><img
+                                            src="/images/info.png"
+                                            alt=""></i>
+                                    <i class="far fa-star"><img
+                                            src="/images/star-empty.png"
+                                            alt=""></i>
+                                </div>
+                                <img src="images/volunteer3.png" alt=""
+                                    class="profile-img">
+                                <h2 class="project-title">revolution</h2>
+                                <p class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Necessitatibus, totam sequi. Sint cum
+                                    totam
+                                    aliquid fugiat possimus natus vitae, dolores
+                                    asperiores
+                                    maiores, facere ab voluptas? Obcaecati aut
+                                    odit
+                                    expeditap
+                                    dignissimos.
+                                </p>
+                                <div class="project-info">
+                                    <div class="detail flex">
+                                        <div class="info">
+                                            <i class="fas fa-tasks"><img
+                                                    src="/images/list.png"
+                                                    alt=""></i>
+                                            <p>task:commercial project</p>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="info">
+                                            <i class="far fa-calendar-alt"> <img
+                                                    src="images/calender.png"
+                                                    alt=""></i>
+                                            <p>dare: 9.9.2001</p>
+                                        </div>
+                                        <div class="members">
+                                            <img src="/images/volunteer1.png"
+                                                alt="">
+                                            <img src="/images/volunteer2.png"
+                                                alt="">
+                                            <img src="/images/volunteer4.png"
+                                                alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="top-menu">
+                                    <i class="fas fa-ellipsis-h"><img
+                                            src="/images/info.png"
+                                            alt=""></i>
+                                    <i class="far fa-star"><img
+                                            src="/images/star-empty.png"
+                                            alt=""></i>
+                                </div>
+                                <img src="images/volunteer4.png" alt=""
+                                    class="profile-img">
+                                <h2 class="project-title">revolution</h2>
+                                <p class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Necessitatibus, totam sequi. Sint cum
+                                    totam
+                                    aliquid fugiat possimus natus vitae, dolores
+                                    asperiores
+                                    maiores, facere ab voluptas? Obcaecati aut
+                                    odit
+                                    expeditap
+                                    dignissimos.
+                                </p>
+                                <div class="project-info">
+                                    <div class="detail flex">
+                                        <div class="info">
+                                            <i class="fas fa-tasks"><img
+                                                    src="/images/list.png"
+                                                    alt=""></i>
+                                            <p>task:commercial project</p>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="info">
+                                            <i class="far fa-calendar-alt"> <img
+                                                    src="images/calender.png"
+                                                    alt=""></i>
+                                            <p>dare: 9.9.2001</p>
+                                        </div>
+                                        <div class="members">
+                                            <img src="/images/volunteer1.png"
+                                                alt="">
+                                            <img src="/images/volunteer2.png"
+                                                alt="">
+                                            <img src="/images/volunteer3.png"
+                                                alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="top-menu">
+                                    <i class="fas fa-ellipsis-h"><img
+                                            src="/images/info.png"
+                                            alt=""></i>
+                                    <i class="far fa-star"><img
+                                            src="/images/star-empty.png"
+                                            alt=""></i>
+                                </div>
+                                <img src="images/volunteer3.png" alt=""
+                                    class="profile-img">
+                                <h2 class="project-title">revolution</h2>
+                                <p class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Necessitatibus, totam sequi. Sint cum
+                                    totam
+                                    aliquid fugiat possimus natus vitae, dolores
+                                    asperiores
+                                    maiores, facere ab voluptas? Obcaecati aut
+                                    odit
+                                    expeditap
+                                    dignissimos.
+                                </p>
+                                <div class="project-info">
+                                    <div class="detail flex">
+                                        <div class="info">
+                                            <i class="fas fa-tasks"><img
+                                                    src="/images/list.png"
+                                                    alt=""></i>
+                                            <p>task:commercial project</p>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="info">
+                                            <i class="far fa-calendar-alt"> <img
+                                                    src="images/calender.png"
+                                                    alt=""></i>
+                                            <p>dare: 9.9.2001</p>
+                                        </div>
+                                        <div class="members">
+                                            <img src="/images/volunteer2.png"
+                                                alt="">
+                                            <img src="/images/volunteer3.png"
+                                                alt="">
+                                            <img src="/images/volunteer4.png"
+                                                alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="pagination">
+                        <a href="#"><img src="images/previous.png" alt=""></a>
+                        <a href="#"><img src="images/left.png" alt=""></a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#"><img src="images/right-arrow1.png"
+                                alt=""></a>
+                        <a href="#"><img src="images/next.png" alt=""></a>
+                    </div>
+                    <footer class=" container-fluid border-2 border-top">
+
+                        <a class="privacylink" href="#">Privacy Policy</a>
+                    </footer>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+        </body>
+        <script>
+            function LL(){
+                console.log('list-layout');
+                document.querySelector('.toggle-btns').children[0].classList.add('active');
+                document.querySelector('.toggle-btns').children[1].classList.remove('active');
+
+                document.querySelector('.project-container').classList.add('list');
+                document.querySelector('.project-container').classList.remove('grid');
+
+            }
+            function GG(){
+                console.log('grid-layout');
+                document.querySelector('.toggle-btns').children[0].classList.remove('active');
+                document.querySelector('.toggle-btns').children[1].classList.add('active');
+
+                document.querySelector('.project-container').classList.remove('list');
+                document.querySelector('.project-container').classList.add('grid');
+            }
+
+</script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/trial.js"></script>
+    </html>

@@ -29,7 +29,6 @@ header {
   text-align: center;
   padding: 2rem;
 }
-
 header h1 {
   font-size: 2.5rem;
   font-weight: 300;
@@ -42,7 +41,6 @@ header h1 {
   justify-content: flex-end;
   margin-bottom: 2rem;
 }
-
 .toggle-btns i img {
   width: 50px;
   background: darken #8800be, 10;
@@ -55,12 +53,10 @@ header h1 {
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
-
 .toggle-btns i img:hover {
   transform: translate(-0.25rem);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
-
 .toggle-btns i img.active {
   background: #ffffff;
   color: #8800be;
@@ -73,48 +69,40 @@ header h1 {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
 }
-
 .project-container .project:hover {
   transform: scale(1.02);
   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.2);
 }
-
 .project-container .project .project-title {
   color: #8800be;
   font-weight: 500;
 }
-
 .project-container .project .project-desc,
 .project-container .project .project-info {
   color: #8800be;
 }
-
 .project-container.list {
   display: grids;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
-
 .project-container.list .project {
   display: grid;
   grid-template-columns: 100px 1fr 360px;
   grid-template-rows: auto auto auto;
   grid-gap: 1rem;
 }
-
 .project-container.list .project .top-menu {
   grid-column: 1/4;
   grid-row: 1/2;
   justify-self: end;
 }
-
 .project-container.list .project .top-menu i img {
   width: 30px;
   color: #8d99ae;
   cursor: pointer;
   margin-left: 1rem;
 }
-
 .project-container.list .project .profile-img {
   grid-column: 1/2;
   grid-row: 2/4;
@@ -124,43 +112,35 @@ header h1 {
   height: 80px;
   border-radius: 50%;
 }
-
 .project-container.list .project .project-title {
   grid-column: 2/4;
   grid-row: 2/3;
 }
-
 .project-container.list .project .project-desc {
   grid-column: 2/3;
   grid-row: 3/4;
   margin-left: 4rem;
 }
-
 .project-container.list .project .project-info {
   grid-column: 3/4;
   grid-row: 3/4;
 }
-
 .project-container.list .project .project-info .detail .info {
   display: flex;
 }
-
 .project-container.list .project .project-info .detail .info i img {
   width: 30px;
   font-size: 1.2rem;
 }
-
 .project-container.list .project .project-info .detail .members img {
   width: 50px;
   border-radius: 50%;
 }
-
 .project-container.list .project .project-info .detail.flex {
   display: flez;
   align-items: center;
   justify-content: space-between;
 }
-
 .project-container.list .project .project-info .detail.flex img {
   width: 40px;
   height: 40px;
@@ -168,57 +148,48 @@ header h1 {
   border-radius: 50%;
   margin-left: -1rem;
 }
-
 .project-container.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
 }
-
 .project-container.grid .project {
   display: grid;
   grid-template-columns: 1fr;
 }
-
 .project-container.grid .project .top-menu i img {
   width: 30px;
   color: #8d99ae;
   cursor: pointer;
   margin-left: 1rem;
 }
-
 .project-container.grid .project .profile-img {
   width: 60px;
   height: 60px;
   margin-bottom: 1rem;
 }
-
 .project-container.grid .project .project-title,
 .project-container.grid .project .project-desc,
 .project-container.grid .project .project-info {
   margin-bottom: 1rem;
 }
-
 .project-container.grid .project .project-title .detail .info,
 .project-container.grid .project .project-desc .detail .info,
 .project-container.grid .project .project-info .detail .info {
   display: flex;
 }
-
 .project-container.grid .project .project-title .detail .info i img,
 .project-container.grid .project .project-desc .detail .info i img,
 .project-container.grid .project .project-info .detail .info i img {
   width: 30px;
   font-size: 1.2rem;
 }
-
 .project-container.grid .project .project-title .detail .members img,
 .project-container.grid .project .project-desc .detail .members img,
 .project-container.grid .project .project-info .detail .members img {
   width: 50px;
   border-radius: 50%;
 }
-
 .project-container.grid .project .project-title .detail.flex,
 .project-container.grid .project .project-desc .detail.flex,
 .project-container.grid .project .project-info .detail.flex {
@@ -226,7 +197,6 @@ header h1 {
   align-items: center;
   justify-content: space-between;
 }
-
 .project-container.grid .project .project-title .detail.flex img,
 .project-container.grid .project .project-desc .detail.flex img,
 .project-container.grid .project .project-info .detail.flex img {
@@ -235,4 +205,4 @@ header h1 {
   border: 2px solid #8800be;
   border-radius: 50%;
   margin-left: -1rem;
-}
+}/*# sourceMappingURL=listgrid.css.map */

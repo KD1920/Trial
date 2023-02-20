@@ -1,308 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap.bundle.min.js">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <title>Document</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/listGridToggle.css">
     </head>
     <body>
+        <header>
 
-        <div class=" row-base" style="display: -webkit-flex;">
-            <section
-                class="horizontal-filters-base horizontal-filters-hideBorder
-                horizontal-filters-addBoxShadow">
-                <div>
-                    <div
-                        class="horizontal-filters-sortContainer">
+        </header>
+        <main class="d-flex flex-column">
+            <div></div>
+            <div class="container mt-3 d-flex flex-column">
+                <div class="d-flex flex-row justify-content-around">
+                    <div class="container-fluid fs-3">Explore <b>72 missions</b></div>
+                    <select class="sortBy">
+                        <option value="" hidden selected>Sort by</option>
+                        <option value="Country">Country</option>
+                        <option value="City">City</option>
+                        <option value="Theme">Theme</option>
+                        <option value="Skills">Skills</option>
+                    </select>
+                    <div class="d-flex toggleRowicon justify-content-evenly">
+                        <div class="icons d-flex btn-group">
+                            <button type="button" class="grid-button active"
+                                id="grid-active-btn">
+                                <i class="bi p-0 bi-grid"></i>
+                            </button>
+                            <button type="button" class="list-button "
+                                id="details-active-btn">
+                                <i class="bi p-0 bi-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-list mt-5">
+                    <div class="mission card ">
                         <div>
+                            <img class="card-img-top"
+                                src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                alt="">
+                        </div>
+                        <div class="card-body">
                             <div>
-                                <div
-                                    class="sort-sortBy"><!-- react-text: 315 -->Sort
-                                    by : <!-- /react-text -->
-                                    <span>
-                                        Recommended
-                                    </span>
-                                    <span
-                                        class="myntraweb-sprite sort-downArrow
-                                        sprites-downArrow">
-                                    </span>
-                                    <ul
-                                        class="sort-list">
-                                        <li>
-                                            <label
-                                                class="sort-label ">
-                                                <input
-                                                    type="radio"
-                                                    value="recommended"><!-- react-text: 322 -->Recommended<!-- /react-text -->
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label
-                                                class="sort-label ">
-                                                <input
-                                                    type="radio" value="new"><!-- react-text: 326 -->What's
-                                                New<!-- /react-text -->
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label
-                                                class="sort-label ">
-                                                <input
-                                                    type="radio"
-                                                    value="popularity"><!-- react-text: 330 -->Popularity<!-- /react-text -->
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label
-                                                class="sort-label ">
-                                                <input
-                                                    type="radio"
-                                                    value="discount"><!-- react-text: 334 -->Better
-                                                Discount<!-- /react-text -->
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label
-                                                class="sort-label ">
-                                                <input
-                                                    type="radio"
-                                                    value="price_desc"><!-- react-text: 338 -->Price:
-                                                High to Low<!-- /react-text -->
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label
-                                                class="sort-label ">
-                                                <input
-                                                    type="radio"
-                                                    value="price_asc"><!-- react-text: 342 -->Price:
-                                                Low to High<!-- /react-text -->
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label
-                                                class="sort-label ">
-                                                <input
-                                                    type="radio" value="Customer
-                                                    Rating"><!-- react-text: 346 -->Customer
-                                                Rating<!-- /react-text -->
-                                            </label>
-                                        </li>
-                                    </ul>
+                                <h4 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Reiciendis laudantium
+                                    culpa
+                                    exercitationem nemo dolores amet molestiae
+                                    obcaecati,</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="align-self-center m-0"><b>Tree
+                                            Canada</b></p>
+                                    <div class="rating fs-5">
+                                        <span class="star" data-value="1"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="2"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="3"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="4"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="5"><i
+                                                class="bi bi-star"></i></span>
+                                    </div>
                                 </div>
+                            </div>
+                            <div>
+                                <div class=" container timeline
+                                    text-center">From 10/01/2019 until 25/2/2019</div>
+                                <div class="border-top border-bottom">
+                                    <div class="d-flex mt-4
+                                        justify-content-between">
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/Seats-left.png"
+                                                alt="">
+                                            <div>10</div>
+                                            <div>Seats left</div>
+                                        </div>
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/deadline.png"
+                                                alt="">
+                                            <div>09/01/2019</div>
+                                            <div>Deadline</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3 justify-content-center">
+                                <a href="#" class="btn border-warning
+                                    text-warning apply-btn
+                                    ">Apply <i
+                                        class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="atsa-base">
-                        <ul class="atsa-filters">
-                            <li>
-                                <label class="">
-                                    <input
-                                        type="radio" value="Bundles">
-                                    <h4
-                                        class="atsa-title"><!-- react-text: 353 -->Bundles<!-- /react-text --><!-- react-text: 354 -->
-                                        <!-- /react-text -->
-                                    </h4>
-                                    <span class="atsa-downArrow
-                                        sprites-arrowDownBold myntraweb-sprite">
-                                    </span>
-                                </label>
-                            </li>
-                            <li>
-                                <label
-                                    class="">
-                                    <input type="radio" value="Country
-                                        of Origin">
-                                    <h4
-                                        x class="atsa-title"><!-- react-text: 360 -->Country
-                                        of Origin<!-- /react-text --><!-- react-text: 361 -->
-                                        <!-- /react-text -->
-                                    </h4>
-                                    <span
-                                        class="atsa-downArrow
-                                        sprites-arrowDownBold myntraweb-sprite">
-                                    </span>
-                                </label>
-                            </li>
-                            <li>
-                                <label
-                                    class="atsa-selected">
-                                    <input type="radio"
-                                        value="size_facet">
-                                    <h4
-                                        class="atsa-title"><!-- react-text: 367 -->Size<!-- /react-text --><!-- react-text: 368 -->
-                                        <!-- /react-text -->
-                                    </h4>
-                                    <span
-                                        class="atsa-upArrow
-                                        sprites-arrowUpBold myntraweb-sprite">
-                                    </span>
-                                </label>
-                            </li>
-                            <li>
-
-                            </li>
-                        </ul>
-                        <div
-                            class="atsa-atsaFiltersOptionCtn
-                            atsa-atsaShowContainer">
-                            <ul
-                                class="atsa-values">
-                                <li>
-                                    <label
-                                        class="common-customCheckbox">
-                                        <input
-                                            type="checkbox" value="S"><!-- react-text: 2487 -->S<!-- /react-text -->
-                                        <div
-                                            class="common-checkboxIndicator">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label
-                                        class="common-customCheckbox">
-                                        <input
-                                            type="checkbox" value="M"><!-- react-text: 2492 -->M<!-- /react-text -->
-                                        <div
-                                            class="common-checkboxIndicator">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label
-                                        class="common-customCheckbox">
-                                        <input
-                                            type="checkbox" value="L"><!-- react-text: 4448 -->L<!-- /react-text -->
-                                        <div
-                                            class="common-checkboxIndicator">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label
-                                        class="common-customCheckbox">
-                                        <input
-                                            type="checkbox" value="XL"><!-- react-text: 4453 -->XL<!-- /react-text -->
-                                        <div
-                                            class="common-checkboxIndicator">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label
-                                        class="common-customCheckbox">
-                                        <input
-                                            type="checkbox"
-                                            value="XXL"><!-- react-text: 4458 -->XXL<!-- /react-text -->
-                                        <div
-                                            class="common-checkboxIndicator">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label
-                                        class="common-customCheckbox">
-                                        <input
-                                            type="checkbox"
-                                            value="3XL"><!-- react-text: 4463 -->3XL<!-- /react-text -->
-                                        <div
-                                            class="common-checkboxIndicator">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label
-                                        class="common-customCheckbox">
-                                        <input
-                                            type="checkbox"
-                                            value="4XL"><!-- react-text: 4468 -->4XL<!-- /react-text -->
-                                        <div
-                                            class="common-checkboxIndicator">
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
+                    <div class="mission card">
+                        <div>
+                            <img class="card-img-top"
+                                src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                alt="">
                         </div>
-                    </div><!-- react-empty: 373 -->
+                        <div class="card-body">
+                            <div>
+                                <h4 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Reiciendis laudantium
+                                    culpa
+                                    exercitationem nemo dolores amet molestiae
+                                    obcaecati,</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="align-self-center m-0"><b>Tree
+                                            Canada</b></p>
+                                    <div class="rating fs-5">
+                                        <span class="star" data-value="1"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="2"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="3"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="4"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="5"><i
+                                                class="bi bi-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class=" container timeline
+                                    text-center">From 10/01/2019 until 25/2/2019</div>
+                                <div class="border-top border-bottom">
+                                    <div class="d-flex mt-4
+                                        justify-content-between">
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/Seats-left.png"
+                                                alt="">
+                                            <div>10</div>
+                                            <div>Seats left</div>
+                                        </div>
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/deadline.png"
+                                                alt="">
+                                            <div>09/01/2019</div>
+                                            <div>Deadline</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3 justify-content-center">
+                                <a href="#" class="btn border-warning
+                                    text-warning apply-btn
+                                    ">Apply <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission card ">
+                        <div>
+                            <img class="card-img-top"
+                                src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h4 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Reiciendis laudantium
+                                    culpa
+                                    exercitationem nemo dolores amet molestiae
+                                    obcaecati,</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="align-self-center m-0"><b>Tree
+                                            Canada</b></p>
+                                    <div class="rating fs-5">
+                                        <span class="star" data-value="1"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="2"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="3"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="4"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="5"><i
+                                                class="bi bi-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class=" container timeline
+                                    text-center">From 10/01/2019 until 25/2/2019</div>
+                                <div class="border-top border-bottom">
+                                    <div class="d-flex mt-4
+                                        justify-content-between">
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/Seats-left.png"
+                                                alt="">
+                                            <div>10</div>
+                                            <div>Seats left</div>
+                                        </div>
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/deadline.png"
+                                                alt="">
+                                            <div>09/01/2019</div>
+                                            <div>Deadline</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3 justify-content-center">
+                                <a href="#" class="btn border-warning
+                                    text-warning apply-btn
+                                    ">Apply <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission card ">
+                        <div>
+                            <img class="card-img-top"
+                                src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h4 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Reiciendis laudantium
+                                    culpa
+                                    exercitationem nemo dolores amet molestiae
+                                    obcaecati,</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="align-self-center m-0"><b>Tree
+                                            Canada</b></p>
+                                    <div class="rating fs-5">
+                                        <span class="star" data-value="1"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="2"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="3"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="4"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="5"><i
+                                                class="bi bi-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class=" container timeline
+                                    text-center">From 10/01/2019 until 25/2/2019</div>
+                                <div class="border-top border-bottom">
+                                    <div class="d-flex mt-4
+                                        justify-content-between">
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/Seats-left.png"
+                                                alt="">
+                                            <div>10</div>
+                                            <div>Seats left</div>
+                                        </div>
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/deadline.png"
+                                                alt="">
+                                            <div>09/01/2019</div>
+                                            <div>Deadline</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3 justify-content-center">
+                                <a href="#" class="btn border-warning
+                                    text-warning apply-btn
+                                    ">Apply <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission card ">
+                        <div>
+                            <img class="card-img-top"
+                                src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h4 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Reiciendis laudantium
+                                    culpa
+                                    exercitationem nemo dolores amet molestiae
+                                    obcaecati,</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="align-self-center m-0"><b>Tree
+                                            Canada</b></p>
+                                    <div class="rating fs-5">
+                                        <span class="star" data-value="1"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="2"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="3"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="4"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="5"><i
+                                                class="bi bi-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class=" container timeline
+                                    text-center">From 10/01/2019 until 25/2/2019</div>
+                                <div class="border-top border-bottom">
+                                    <div class="d-flex mt-4
+                                        justify-content-between">
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/Seats-left.png"
+                                                alt="">
+                                            <div>10</div>
+                                            <div>Seats left</div>
+                                        </div>
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/deadline.png"
+                                                alt="">
+                                            <div>09/01/2019</div>
+                                            <div>Deadline</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3 justify-content-center">
+                                <a href="#" class="btn border-warning
+                                    text-warning apply-btn
+                                    ">Apply <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission card ">
+                        <div>
+                            <img class="card-img-top"
+                                src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h4 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Reiciendis laudantium
+                                    culpa
+                                    exercitationem nemo dolores amet molestiae
+                                    obcaecati,</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="align-self-center m-0"><b>Tree
+                                            Canada</b></p>
+                                    <div class="rating fs-5">
+                                        <span class="star" data-value="1"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="2"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="3"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="4"><i
+                                                class="bi bi-star"></i></span>
+                                        <span class="star" data-value="5"><i
+                                                class="bi bi-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class=" container timeline
+                                    text-center">From 10/01/2019 until 25/2/2019</div>
+                                <div class="border-top border-bottom">
+                                    <div class="d-flex mt-4
+                                        justify-content-between">
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/Seats-left.png"
+                                                alt="">
+                                            <div>10</div>
+                                            <div>Seats left</div>
+                                        </div>
+                                        <div class="d-grid gridctnr">
+                                            <img class="pt-2 pe-3"
+                                                src="images/deadline.png"
+                                                alt="">
+                                            <div>09/01/2019</div>
+                                            <div>Deadline</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-3 justify-content-center">
+                                <a href="#" class="btn border-warning
+                                    text-warning apply-btn
+                                    ">Apply <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div
-                    class="filter-summary-selectedFilterContainer
-                    filter-summary-reduceTopPadding">
-                    <ul
-                        class="filter-summary-filterList">
-                        <li>
-                            <div
-                                class="filter-summary-filter"><!-- react-text: 2499 -->Bundles<!-- /react-text -->
-                                <label
-                                    class="filter-summary-removeFilter">
-                                    <input
-                                        type="checkbox"
-                                        value="Bundles" data-group="Bundles">
-                                    <span
-                                        class="myntraweb-sprite
-                                        filter-summary-removeIcon
-                                        sprites-remove">
-                                    </span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div
-                                class="filter-summary-filter"><!-- react-text: 4440 -->All
-                                Countries<!-- /react-text -->
-                                <label
-                                    class="filter-summary-removeFilter">
-                                    <input
-                                        type="checkbox"
-                                        value="All Countries"
-                                        data-group="Country of Origin">
-                                    <span
-                                        class="myntraweb-sprite
-                                        filter-summary-removeIcon
-                                        sprites-remove">
-                                    </span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div
-                                class="filter-summary-filter"><!-- react-text: 4474 -->M<!-- /react-text -->
-                                <label
-                                    class="filter-summary-removeFilter">
-                                    <input
-                                        type="checkbox"
-                                        value="M" data-group="size_facet">
-                                    <span
-                                        class="myntraweb-sprite
-                                        filter-summary-removeIcon
-                                        sprites-remove">
-                                    </span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div
-                                class="filter-summary-filter"><!-- react-text: 4567 -->L<!-- /react-text -->
-                                <label
-                                    class="filter-summary-removeFilter">
-                                    <input
-                                        type="checkbox"
-                                        value="L" data-group="size_facet">
-                                    <span
-                                        class="myntraweb-sprite
-                                        filter-summary-removeIcon
-                                        sprites-remove">
-                                    </span>
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+            </div>
+            <div></div>
+        </main>
     </body>
 </html>
+
+<script>
+const missionList = document.querySelector('.mission-list');
+const gridViewBtn = document.getElementById('grid-active-btn');
+const detailsViewBtn = document.getElementById('details-active-btn');
+
+// gridViewBtn.classList.add('active-btn');
+
+gridViewBtn.addEventListener('click', () => {
+    gridViewBtn.classList.add('active');
+    detailsViewBtn.classList.remove('active');
+    missionList.classList.remove('showlist');
+});
+
+detailsViewBtn.addEventListener('click', () => {
+    detailsViewBtn.classList.add('active');
+    gridViewBtn.classList.remove("active");
+    missionList.classList.add("showlist");
+});
+</script>
