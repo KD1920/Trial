@@ -74,9 +74,7 @@
 .filter-Row {
   height: 4em !important;
 }
-.navbar {
-  width: 100%;
-}
+
 .nav-link {
   border: none;
   background: none;
@@ -112,7 +110,6 @@ footer {
   }
 }
 
-/* list-grid btn */
 .btn {
   border: none;
   outline: none;
@@ -129,18 +126,8 @@ footer {
   background-color: #666;
   color: white;
 }
-.env {
-  display: flex;
-  justify-content: center;
-  height: 35px;
-  width: 30%;
-  background-color: white;
-  border: 1px solid #e8e8e8;
-  border-radius: 18px;
-  translate: 0 -50% 1em;
-}
 
-/* .pagination {
+.pagination {
   justify-content: center;
 }
 .pagination a {
@@ -166,11 +153,13 @@ footer {
   gap: 2em;
 }
 .card {
-  width: 460px;
-  height: 618px;
+  /* height: 284px; */
 }
 .card-title {
   font-size: 26px;
+}
+.img {
+  height: 100%;
 }
 .card-subtitle {
   font-size: 15px;
@@ -181,29 +170,16 @@ footer {
 .stars {
   float: right;
 }
-.timeline {
-  display: flex;
-  justify-content: center;
-  height: 35px;
-  width: 60%;
-  background-color: white;
-  border: 1px solid #e8e8e8;
-  border-radius: 18px;
-  translate: 0 50% 1em;
-}
-.icon {
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
   float: left;
 }
 .seats {
   margin-top: 22px;
 }
-.deadline {
-  float: right;
-  width: 115px;
-}
 .apply {
-  margin-top: 22px;
-  width: 133px;
   height: 48px;
   color: #f88634;
   background: #f8863400 0% 0% no-repeat padding-box;
@@ -213,4 +189,4 @@ footer {
 }
 .rating {
   margin-top: 20px;
-} */
+}
