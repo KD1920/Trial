@@ -112,7 +112,7 @@ footer {
   }
 }
 
-.btn {
+/* .btn {
   border: none;
   outline: none;
   border-radius: 50%;
@@ -127,8 +127,8 @@ footer {
 .btn.active {
   background-color: #666;
   color: white;
-}
-.env {
+} */
+/*.env {
   display: flex;
   justify-content: center;
   height: 35px;
@@ -139,7 +139,7 @@ footer {
   translate: 0 -50% 1em;
 }
 
-/* .pagination {
+ .pagination {
   justify-content: center;
 }
 .pagination a {
