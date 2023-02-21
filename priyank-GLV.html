@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -11,61 +12,26 @@
     <link rel="stylesheet" href="css/listgridToggle1.css" />
   </head>
   <body>
-    <div class="col">
-      <nav
-        class="navbar border-bottom border-2 navbar-expand-md navbar-light bg-light"
-      >
-        <div class="container-fluid d-flex navigationBar">
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBackdrop"
-            aria-controls="navbarColor03"
-            aria-expanded="false"
-            aria-label="Toggle
+    <div id="header" class="row">
+      <!-- <div class="col-1"></div> -->
+      <div class="col">
+        <nav
+          class="navbar border-bottom border-2 navbar-expand-md navbar-light bg-light"
+        >
+          <div class="container-fluid d-flex navigationBar">
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBackdrop"
+              aria-controls="navbarColor03"
+              aria-expanded="false"
+              aria-label="Toggle
                             navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarColor03" \>
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item ps-5">
-                <a class="nav-link" href="#">Stories</a>
-              </li>
-              <li class="nav-item ps-5 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Policy</a
-                >
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Volunteering</a>
-                  <a class="dropdown-item" href="#">Sponsored</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasWithBackdrop"
-            aria-labelledby="offcanvasWithBackdropLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor03" \>
               <ul class="navbar-nav me-auto">
                 <li class="nav-item ps-5">
                   <a class="nav-link" href="#">Stories</a>
@@ -87,257 +53,299 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="d-flex">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item ps-5">
-                <a href="#"
-                  ><img id="notification" src="images/bell.png" alt=""
-                /></a>
-              </li>
-              <li class="nav-item ps-2 dropdown">
-                <div id="dropdown">
-                  <ul class="navbar-nav me-auto">
-                    <li>
-                      <a
-                        class="nav-link"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        <img
-                          class="userProfile"
-                          src="images/user-img.png"
-                          alt=""
-                      /></a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Dashboard</a>
-                        <a class="dropdown-item" href="#">My Account</a>
-                        <a class="dropdown-item" href="#">Help Center</a>
-                        <a class="dropdown-item" href="#">Logout</a>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        id="drop"
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Evan Donohue
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Dashboard</a>
-                        <a class="dropdown-item" href="#">My Account</a>
-                        <a class="dropdown-item" href="#">Help Center</a>
-                        <a class="dropdown-item" href="#">Logout</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <nav
-        class="border-bottom border-5 navbar-expand-md navbar-light bg-light"
-      >
-        <div class="row search-Row">
-          <div class="col-6 pt-3 border-end border-1 text-center">
-            <div class="input-group rounded">
-              <img id="search" src="images/search.png" alt="search-addon" />
-              <input
-                type="search"
-                class="form-control rounded"
-                placeholder="Search mission..."
-                aria-label="Search"
-                aria-describedby="search-addon"
-              />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="row filter-Row container-fluid d-flex navigationBar">
-              <button
-                class="navbar-toggler collapsed"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-controls="navbarColor02"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span><img src="/images/filter.png" alt="" /></span>
-              </button>
-              <div class="navbar-collapse collapse" id="navbarColor02" \>
-                <ul class="navbar-nav me-auto col-12">
-                  <li class="col-3 nav-item ps-1 dropdown">
-                    <div class="pt-2 dropdown border-end border-1">
-                      <button
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Country
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item">Country 1</a>
-                        <a class="dropdown-item">Country 2</a>
-                        <a class="dropdown-item">Country 3</a>
-                      </div>
-                    </div>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasWithBackdrop"
+              aria-labelledby="offcanvasWithBackdropLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title"
+                  id="offcanvasWithBackdropLabel"
+                ></h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item ps-5">
+                    <a class="nav-link" href="#">Stories</a>
                   </li>
-                  <li class="col-3 nav-item ps-1 dropdown">
-                    <div class="pt-2 border-end border-1">
-                      <button
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        City
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item">City 1</a>
-                        <a class="dropdown-item">City 2</a>
-                        <a class="dropdown-item">City 3</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-3 nav-item ps-1 dropdown">
-                    <div class="pt-2 border-end border-1">
-                      <button
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Theme
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item">Theme 1</a>
-                        <a class="dropdown-item">Theme 2</a>
-                        <a class="dropdown-item">Theme 3</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-3 nav-item ps-1 dropdown">
-                    <div class="pt-2 border-end border-1">
-                      <button
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Skills
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item">Skill 1</a>
-                        <a class="dropdown-item">Skill 2</a>
-                        <a class="dropdown-item">Skill 3</a>
-                      </div>
+                  <li class="nav-item ps-5 dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Policy</a
+                    >
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Volunteering</a>
+                      <a class="dropdown-item" href="#">Sponsored</a>
                     </div>
                   </li>
                 </ul>
               </div>
-              <div
-                class="offcanvas offcanvas-end"
-                tabindex="-1"
-                id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel"
-              >
-                <div class="offcanvas-header">
-                  <h5 id="offcanvasRightLabel">Filters</h5>
-                  <button
-                    type="button"
-                    class="btn-close text-reset"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav me-auto">
-                    <li class="nav-item ps-5 dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Country</a
-                      >
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Country 1</a>
-                        <a class="dropdown-item" href="#">Country 2</a>
-                        <a class="dropdown-item" href="#">Country 3</a>
+            </div>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item ps-5">
+                  <a href="#"
+                    ><img id="notification" src="images/bell.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item ps-2 dropdown">
+                  <div id="dropdown">
+                    <ul class="navbar-nav me-auto">
+                      <li>
+                        <a
+                          class="nav-link"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <img
+                            class="userProfile"
+                            src="images/user-img.png"
+                            alt=""
+                        /></a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Dashboard</a>
+                          <a class="dropdown-item" href="#">My Account</a>
+                          <a class="dropdown-item" href="#">Help Center</a>
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                      </li>
+                      <li>
+                        <a
+                          id="drop"
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Evan Donohue
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Dashboard</a>
+                          <a class="dropdown-item" href="#">My Account</a>
+                          <a class="dropdown-item" href="#">Help Center</a>
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav
+          class="border-bottom border-5 navbar-expand-md navbar-light bg-light"
+        >
+          <div class="row search-Row">
+            <div class="col-6 pt-3 border-end border-1 text-center">
+              <div class="input-group rounded">
+                <img id="search" src="images/search.png" alt="search-addon" />
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="Search mission..."
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row filter-Row container-fluid d-flex navigationBar">
+                <button
+                  class="navbar-toggler collapsed"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="navbarColor02"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span><img src="/images/filter.png" alt="" /></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarColor02" \>
+                  <ul class="navbar-nav me-auto col-12">
+                    <li class="col-3 nav-item ps-1 dropdown">
+                      <div class="pt-2 dropdown border-end border-1">
+                        <button
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Country
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Country 1</a>
+                          <a class="dropdown-item">Country 2</a>
+                          <a class="dropdown-item">Country 3</a>
+                        </div>
                       </div>
                     </li>
-
-                    <li class="nav-item ps-5 dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >City</a
-                      >
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item">City 1</a>
-                        <a class="dropdown-item">City 2</a>
-                        <a class="dropdown-item">City 3</a>
+                    <li class="col-3 nav-item ps-1 dropdown">
+                      <div class="pt-2 border-end border-1">
+                        <button
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          City
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">City 1</a>
+                          <a class="dropdown-item">City 2</a>
+                          <a class="dropdown-item">City 3</a>
+                        </div>
                       </div>
                     </li>
-                    <li class="nav-item ps-5 dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Theme</a
-                      >
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item">Theme 1</a>
-                        <a class="dropdown-item">Theme 2</a>
-                        <a class="dropdown-item">Theme 3</a>
+                    <li class="col-3 nav-item ps-1 dropdown">
+                      <div class="pt-2 border-end border-1">
+                        <button
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Theme
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Theme 1</a>
+                          <a class="dropdown-item">Theme 2</a>
+                          <a class="dropdown-item">Theme 3</a>
+                        </div>
                       </div>
                     </li>
-                    <li class="nav-item ps-5 dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Skills</a
-                      >
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item">Skill 1</a>
-                        <a class="dropdown-item">Skill 2</a>
-                        <a class="dropdown-item">Skill 3</a>
+                    <li class="col-3 nav-item ps-1 dropdown">
+                      <div class="pt-2 border-end border-1">
+                        <button
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Skills
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Skill 1</a>
+                          <a class="dropdown-item">Skill 2</a>
+                          <a class="dropdown-item">Skill 3</a>
+                        </div>
                       </div>
                     </li>
                   </ul>
                 </div>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Filters</h5>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item ps-5 dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Country</a
+                        >
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Country 1</a>
+                          <a class="dropdown-item" href="#">Country 2</a>
+                          <a class="dropdown-item" href="#">Country 3</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item ps-5 dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >City</a
+                        >
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">City 1</a>
+                          <a class="dropdown-item">City 2</a>
+                          <a class="dropdown-item">City 3</a>
+                        </div>
+                      </li>
+                      <li class="nav-item ps-5 dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Theme</a
+                        >
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Theme 1</a>
+                          <a class="dropdown-item">Theme 2</a>
+                          <a class="dropdown-item">Theme 3</a>
+                        </div>
+                      </li>
+                      <li class="nav-item ps-5 dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Skills</a
+                        >
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Skill 1</a>
+                          <a class="dropdown-item">Skill 2</a>
+                          <a class="dropdown-item">Skill 3</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
+      <!-- <div class="col-1"></div> -->
     </div>
     <main class="d-flex flex-column">
       <div></div>
@@ -855,6 +863,7 @@
       <div></div>
     </main>
   </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </html>
 
 <script>
