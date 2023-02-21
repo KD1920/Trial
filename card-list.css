@@ -152,9 +152,6 @@ footer {
   grid-template-columns: auto auto auto;
   gap: 2em;
 }
-.card {
-  /* height: 284px; */
-}
 .card-title {
   font-size: 26px;
 }
@@ -188,5 +185,5 @@ footer {
   opacity: 1;
 }
 .rating {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }

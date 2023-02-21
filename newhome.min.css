@@ -1,1 +1,85 @@
-.container1{display:grid;grid-template-columns:auto auto auto;gap:2em}.container1 .card{margin-top:10px}.container1 .card .card-title{font-size:26px}.container1 .card .card-subtitle{font-size:15px}.container1 .card .card-img-top{width:100%}.container1 .card .rating{margin-top:20px}.container1 .card .rating .stars{float:right}.container1 .card .date .timeline{display:flex;height:35px;background-color:white;border:1px solid #e8e8e8;border-radius:18px;translate:0 50% 1em}.container1 .card .date .people .seats{margin-top:22px}.container1 .card .date .people .seats .deadline{float:right;width:150px}.container1 .card .date .people .seats .deadline .icon1{float:left}.container1 .card .date .people .seats .right .icon2{float:left}.container1 .card #apply{display:flex;justify-content:center}.container1 .card #apply .apply{margin-top:22px;width:133px;height:48px;color:#f88634;background:#f8863400 0% 0% no-repeat padding-box;border:2px solid #f88634;border-radius:24px;opacity:1}.pagination{justify-content:center}.pagination a{color:black;float:left;padding:8px 16px;text-decoration:none;transition:background-color 0.3s}.pagination a.active{background-color:dodgerblue;color:white}.pagination a:hover{background-color:#ddd}@media screen and (max-width: 992px){.container1{grid-template-columns:repeat(2, 1fr)}}@media screen and (max-width: 576px){.container1{grid-template-columns:repeat(1, 1fr)}}
+.container1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2em;
+}
+.container1 .card {
+  margin-top: 10px;
+}
+.container1 .card .card-title {
+  font-size: 26px;
+}
+.container1 .card .card-subtitle {
+  font-size: 15px;
+}
+.container1 .card .card-img-top {
+  width: 100%;
+}
+.container1 .card .rating {
+  margin-top: 20px;
+}
+.container1 .card .rating .stars {
+  float: right;
+}
+.container1 .card .date .timeline {
+  display: flex;
+  height: 35px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  translate: 0 50% 1em;
+}
+.container1 .card .date .people .seats {
+  margin-top: 22px;
+}
+.container1 .card .date .people .seats .deadline {
+  float: right;
+  width: 150px;
+}
+.container1 .card .date .people .seats .deadline .icon1 {
+  float: left;
+}
+.container1 .card .date .people .seats .right .icon2 {
+  float: left;
+}
+.container1 .card #apply {
+  display: flex;
+  justify-content: center;
+}
+.container1 .card #apply .apply {
+  margin-top: 22px;
+  width: 133px;
+  height: 48px;
+  color: #f88634;
+  background: #f8863400 0% 0% no-repeat padding-box;
+  border: 2px solid #f88634;
+  border-radius: 24px;
+  opacity: 1;
+}
+.pagination {
+  justify-content: center;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.pagination a:hover {
+  background-color: #ddd;
+}
+@media screen and (max-width: 992px) {
+  .container1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .container1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
