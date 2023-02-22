@@ -1,15 +1,15 @@
-.toggleRowicon {
+.toggle-icon {
   width: auto;
 }
 
-.grid-button {
+.grid-btn {
   border: none;
   height: 48px;
   border-radius: 50%;
   background: none;
 }
 
-.list-button {
+.list-btn {
   border: none;
   height: 48px;
   border-radius: 50%;
@@ -20,24 +20,24 @@
   background-color: lightgray;
 }
 
-.sortBy {
+.sorting {
   height: inherit;
   width: 15em;
   margin-right: 1.5em;
 }
 
-.icons {
+.icon {
   justify-content: space-between;
   font-size: x-large;
 }
 
-.mission-list {
+.card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
 }
 
-.mission {
+.card {
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
@@ -51,6 +51,8 @@
 }
 
 .apply-btn {
+  color: #f88634;
+  border: 2px solid #f88634;
   border-radius: 20px;
   width: 10em;
 }
@@ -77,11 +79,11 @@
   justify-content: space-between;
 }
 
-.showlist.mission-list {
+.showlist.card-container {
   grid-template-columns: 100% !important;
 }
 
-.showlist .mission {
+.showlist .card {
   display: grid;
   grid-template-columns: 35% 65%;
   grid-template-rows: repeat(3, auto);
@@ -89,18 +91,18 @@
   align-items: center;
 }
 
-.showlist .mission .cardImg {
+.showlist .card .cardImg {
   grid-area: photo;
   overflow-x: hidden;
 }
 
-.showlist .mission .cardImg .card-img-top {
+.showlist .card .cardImg .card-img-top {
   object-fit: cover;
   min-width: fit-content;
   height: inherit;
 }
 
-.showlist .mission .card-body {
+.showlist .card .card-body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2em;
@@ -108,41 +110,41 @@
   padding-bottom: 1em;
 }
 
-.showlist .mission .card-body .cardtxt {
+.showlist .card .card-body .cardtxt {
   grid-column: 1 / span 2;
 }
 
-.showlist .mission .card-body .mission-detail {
+.showlist .card .card-body .card-detail {
   grid-row: 2 / span 2;
   grid-column: 2;
   align-items: center;
 }
 
-.showlist .mission .card-body .mission-detail .properties {
+.showlist .card .card-body .card-detail .properties {
   border-bottom: 0 !important;
 }
 
-.showlist .mission .card-body .ratingclass {
+.showlist .card .card-body .ratingclass {
   justify-content: start;
 }
 
-.showlist .mission .card-body .ratingclass .rating {
+.showlist .card .card-body .ratingclass .rating {
   align-self: start;
   padding-left: 2em;
 }
 
-.showlist .mission .card-body .apply {
+.showlist .card .card-body .apply {
   justify-content: start;
 }
 
 @media (max-width: 992px) {
-  .mission-list {
+  .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
-  .mission-list {
+  .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -150,7 +152,7 @@
     display: none !important;
   }
 
-  .sortBy {
+  /* .sorting {
     display: none;
-  }
+  } */
 }
